@@ -96,6 +96,14 @@ For running from source:
 6. Confirm the anonymization and privacy notice.
 7. Enter your **OpenAI API key** when prompted.
    - The key is used to contact the AI model and is not stored permanently by default.
+   - How to get an OpenAI API Key:
+   - You only need to do this once. The app includes a "How do I get an API Key?" button on the pop-up for these instructions.
+   - Go to https://platform.openai.com and create an account.
+   - Add a payment method (this is a Pay-As-You-Go service. A ChatGPT Plus subscription is separate and will not work).
+   - 3Go to the "API keys" section in your account.
+   - Click "Create new secret key". You’ll get a key that looks like sk-...
+   - Copy this key and paste it into the app's pop-up.
+
 8. Wait while the status bar shows progress (file reading, AI interpretation, report generation).
 9. When finished, you will be notified and asked if you want to open the output folder containing the generated `.docx` report.
 
