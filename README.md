@@ -26,7 +26,8 @@ This application can be provided as a portable .zip file. No installation is req
 
 **Download the .zip file:**
 
-- Obtain the .zip archive from the distribution link provided by the developer (e.g., university file share, GitHub release, or institutional download page).
+Safe Link: https://heibox.uni-heidelberg.de/f/89219229313147c1bdc8 
+
 
 **Extract the .zip file:**
 
