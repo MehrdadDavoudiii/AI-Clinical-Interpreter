@@ -1,0 +1,90 @@
+AI Clinical Interpreter – Help Guide
+
+This application helps you get AI-powered interpretations of your anonymized clinical files.
+It works by:
+1.  Letting you enter patient header info (which stays 100% local).
+2.  Letting you add anonymized files (PDF, DOCX, images, etc.).
+3.  Sending *only* the anonymized file content to an AI (like GPT-4o) via your own API key.
+4.  Saving a final .docx report that combines your local header with the AI's interpretation.
+
+IMPORTANT NOTES:
+• The Patient Header information (name, ID, etc.) is NEVER sent to the AI.
+• This tool is for decision SUPPORT only and does NOT replace clinical judgment.
+
+
+1. Patient Header (LOCAL – NOT SENT)
+Use this section to fill in the patient's information. This data will be used to create the header of your final Word document.
+
+• This information is NEVER sent to the AI. It stays 100% on your local computer.
+• All fields are required to proceed.
+
+Tip: If your local data-protection policy requires it, you can use non-identifying codes (e.g., "ID12345") instead of full names.
+
+
+2. Save Location
+Use this section to define where the final report will be stored.
+
+1.  Click "Select Save Location".
+2.  Choose a secure folder where you want to save the final report.
+3.  The app will automatically name the report based on the patient's Last Name and ID (e.g., Report_LastName_PatientID.docx).
+
+
+3. Add Anonymized Files
+This is where you add all relevant documents for ONE patient.
+
+• Supported file types: PDF, DOCX, TXT, PNG, JPG, BMP
+
+1.  Click "Add File".
+2.  Select one or more files.
+3.  For each file, a pop-up will ask for a Description. This description is very important and helps the AI understand the context (e.g., "3D kinematics – lower limb," "Spatiotemporal parameters," "Surface EMG report").
+
+CRITICAL WARNING:
+All files MUST be fully anonymized BEFORE you add them. Use the Clinical Anonymizer app or a similar tool to remove all:
+• Names, birthdates, and addresses
+• Hospital numbers, MRNs, and internal IDs
+• Any other identifiers in text, tables, or images.
+
+
+4. Process Report & API Key
+When all your information is entered and files are added, you are ready to run the interpretation.
+
+1.  Click the "Finish & Process" button.
+2.  A pop-up window will appear with a Legal & Privacy Warning. You must read and accept this.
+3.  You will then be prompted to enter your OpenAI API key. This key is used *only* for this session and is not stored by the app.
+
+The status bar at the bottom will show the progress (e.g., "Connecting...", "Sending data...", "Saving report..."). When finished, a message will confirm that the report has been saved.
+
+How to get an OpenAI API Key:
+
+You only need to do this once. The app includes a "How do I get an API Key?" button on the pop-up for these instructions.
+
+1.  Go to https://platform.openai.com and create an account.
+2.  Add a payment method (this is a Pay-As-You-Go service. A ChatGPT Plus subscription is separate and will not work).
+3.  Go to the "API keys" section in your account.
+4.  Click "Create new secret key". You’ll get a key that looks like sk-...
+5.  Copy this key and paste it into the app's pop-up.
+
+Responsibility: You are fully responsible for protecting your API key and for all costs incurred on your OpenAI account. For help, contact Mehrdad.Davoudi@med.uni-heidelberg.de.
+
+
+5. Review the Generated Report
+After processing, open the .docx report and review it carefully before any clinical use.
+
+Check for:
+• Are the objective descriptions correct?
+• Is the interpretation consistent with the data?
+• Are there any AI "hallucinations" or claims not supported by the data?
+• Do all conclusions make clinical sense?
+
+REMINDER: This AI output is for decision support ONLY. The final responsibility for any clinical decision is yours.
+
+
+6. Limitations & Responsibilities
+• This software is a supporting tool, NOT a certified medical device.
+• It does NOT replace professional clinical judgment.
+
+You are solely responsible for:
+• Ensuring all files are 100% anonymized before you add them.
+• Complying with all hospital, institutional, and legal data protection rules (e.g., GDPR, HIPAA).
+• Protecting your private API key and any costs associated with its use.
+• Verifying and validating all AI-generated output before making a clinical decision.
